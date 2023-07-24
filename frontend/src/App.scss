@@ -3,7 +3,9 @@ $silver-sand: #C4C6C8;
 $tundora: #464646;
 $medium-purple: #B742DA;
 $medium-purple-strong: #A621CD;
-
+.tab-title {
+    color: red;
+}
 html {
     min-height: 100%;
     background: linear-gradient(#2863D7, #8EB5FF);
@@ -17,7 +19,7 @@ body {
 }
 
 .App {
-    padding: 50px 300px;
+    padding: 50px 150px;
 }
 
 header {
