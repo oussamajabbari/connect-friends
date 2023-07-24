@@ -1,15 +1,9 @@
-$saffron: #F3B72E;
-$silver-sand: #C4C6C8;
-$tundora: #464646;
-$medium-purple: #B742DA;
-$medium-purple-strong: #A621CD;
-.tab-title {
-    color: red;
-}
+@use './_colors.scss';
+
 html {
     min-height: 100%;
     background: linear-gradient(#2863D7, #8EB5FF);
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
 }
@@ -29,7 +23,7 @@ header {
 }
 
 .goldy {
-    color: $saffron;
+    color: colors.$saffron;
 }
 
 .icon {
@@ -38,7 +32,7 @@ header {
 
 .connection {
     font-size: 24px;
-    color: $silver-sand;
+    color: colors.$silver-sand;
 
     .login {
         margin-right: 40px;
@@ -61,7 +55,7 @@ main {
 }
 
 .slogan-text {
-    color: $tundora;
+    color: colors.$tundora;
     font-weight: bold;
     font-size: 24px;
     margin-top: 20px;
@@ -73,13 +67,13 @@ button {
     font-weight: bold;
     font-size: 28px;
     font-family: inherit;
-    background-color: $medium-purple;
+    background-color: colors.$medium-purple;
     border: none;
     border-radius: 50px;
     padding: 10px 40px;
 
     &:hover {
-        background-color: $medium-purple-strong;
+        background-color: colors.$medium-purple-strong;
     }
 }
 

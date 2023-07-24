@@ -1,4 +1,4 @@
-import './App.scss'
+import './App.scss';
 import LoginDialog from './LoginDialog'
 import groupSelfie from './assets/group_selfie.png'
 import { useState } from 'react'

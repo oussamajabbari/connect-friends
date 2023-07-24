@@ -16,29 +16,27 @@ function LoginDialog({ isLogingDialogOpen, onClose }) {
         <dialog ref={dialoRef} onClose={onClose}>
             <form method="dialog">
                 <nav className="tab-titles">
-                    <a className="tab-title" onClick={() => setActiveTab('login')}>Login</a>
-                    <a className="tab-title" onClick={() => setActiveTab('register')}>Register</a>
+                    <a className={"tab-title " + (activeTab !== 'login' ? 'inactive-tab' : '')}
+                        onClick={() => setActiveTab('login')}>Login</a>
+                    <a className={"tab-title " + (activeTab !== 'register' ? 'inactive-tab' : '')}
+                        onClick={() => setActiveTab('register')}>Register</a>
                 </nav>
                 <div className="tab-bodies">
-                    {activeTab == 'login' ? (
+                    {activeTab === 'login' ? (
                         <div className="tab-body">
-                            <div>
-                                <label htmlFor="login">Login</label>
-                                <input type="text" id="login" />
-                                <label htmlFor="password">password</label>
-                                <input type="text" id="password" />
-                                <button onClick={onClose}>Login</button>
-                            </div>
+                            <label htmlFor="login">Login</label>
+                            <input type="text" id="login" />
+                            <label htmlFor="password">password</label>
+                            <input type="text" id="password" />
+                            <button onClick={onClose}>Login</button>
                         </div>
                     ) : (
                         <div className="tab-body">
-                            <div>
-                                <label htmlFor="login">Login</label>
-                                <input type="text" id="login" />
-                                <label htmlFor="password">password</label>
-                                <input type="text" id="password" />
-                                <button onClick={onClose}>Register</button>
-                            </div>
+                            <label htmlFor="login">Login</label>
+                            <input type="text" id="login" />
+                            <label htmlFor="password">password</label>
+                            <input type="text" id="password" />
+                            <button onClick={onClose}>Register</button>
                         </div>
                     )}
                 </div>
