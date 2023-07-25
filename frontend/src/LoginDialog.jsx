@@ -26,17 +26,17 @@ function LoginDialog({ isLogingDialogOpen, onClose }) {
                         <div className="tab-body">
                             <label htmlFor="login">Login</label>
                             <input type="text" id="login" />
-                            <label htmlFor="password">password</label>
-                            <input type="text" id="password" />
-                            <button onClick={onClose}>Login</button>
+                            <label htmlFor="password">Password</label>
+                            <input type="password" id="password" />
+                            <button className="goldy" onClick={onClose}>Login</button>
                         </div>
                     ) : (
                         <div className="tab-body">
                             <label htmlFor="login">Login</label>
                             <input type="text" id="login" />
-                            <label htmlFor="password">password</label>
-                            <input type="text" id="password" />
-                            <button onClick={onClose}>Register</button>
+                            <label htmlFor="password">Password</label>
+                            <input type="password" id="password" />
+                            <button className="goldy" onClick={onClose}>Register</button>
                         </div>
                     )}
                 </div>

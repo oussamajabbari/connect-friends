@@ -46,7 +46,11 @@ main {
 
 .slogan-and-join {
     width: 450px;
-    margin-top: 220px
+    margin-top: 220px;
+
+    button {
+        margin-top: 50px;
+    }
 }
 
 .slogan {
@@ -63,7 +67,6 @@ main {
 
 button {
     cursor: pointer;
-    margin-top: 50px;
     font-weight: bold;
     font-size: 28px;
     font-family: inherit;

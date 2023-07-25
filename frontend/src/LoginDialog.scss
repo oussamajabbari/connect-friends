@@ -6,22 +6,58 @@ dialog {
     border-radius: 30px;
     background-color: colors.$spindle;
     padding: 0;
+    border: none;
+    box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.25);
 
-    .tab-title {
-        display: inline-block;
-        width: 50%;
-        text-align: center;
+    .tab-titles {
+        .tab-title {
+            display: inline-block;
+            width: 50%;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            color: colors.$st-tropaz;
+            padding: 10px 0;
+            cursor: pointer;
 
-        &.inactive-tab {
-            background-color: colors.$silver;
+            &.inactive-tab {
+                color: colors.$lynch;
+                background-color: colors.$silver;
+            }
         }
     }
 
     .tab-body {
+        margin-top: 60px;
+        margin-left: 60px;
+        margin-bottom: 30px;
 
         label,
         input {
             display: block;
+        }
+
+        label {
+            margin-top: 20px;
+            margin-left: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: colors.$matisse;
+        }
+
+        input {
+            border: none;
+            border-radius: 32px;
+            margin-top: 5px;
+            width: 300px;
+            padding: 10px 25px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        button {
+            margin-top: 35px;
+            font-size: 26px;
         }
     }
 }
